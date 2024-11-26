@@ -1422,7 +1422,12 @@ pre[class*="language-"] {border-radius:0 !important}
 .ml-5{
     margin-left: 10px;
 }
-
+.mt-20{
+    margin-top: 20px;
+}
+.mr-10{
+     margin-right:10px
+}
 
 
 .dropdown-menu-custom2 {

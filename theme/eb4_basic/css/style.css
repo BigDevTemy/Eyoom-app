@@ -65,7 +65,8 @@
 .header-title .header-title-btn .title-btn .title-btn-in .badge {position:absolute;top:7px;right:7px}
 .header-title .header-title-btn .title-btn .title-btn-in .badge-indigo {background:#3f4678}
 .header-title .header-title-btn .title-btn .title-btn-in .badge-dark {background:#1d1d26}
-.header-title-mobile-btn {display:none;position:absolute;top:30px;right:10px}
+ .header-title-mobile-btn {display:none;position:absolute;top:30px;right:10px}
+
 .header-title-mobile-btn .navbar-toggler {font-size:1.5rem;padding:.25rem .75rem;line-height:1}
 @media (max-width:991px) {
     .header-title {text-align:left;border-bottom:0}
