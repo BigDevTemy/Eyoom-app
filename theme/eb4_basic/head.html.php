@@ -131,7 +131,9 @@ $is_megamenu = 'yes';
                                 </a>
                             <?php /* ===== 사이트 로고 끝 ===== */ ?>
                         </div>
-                        <div class="d-flex flex-row  justify-content-end align-items-center menu-bar-1" style="flex:0.7;">
+                       
+                            
+                        <div class="d-none d-lg-flex flex-row  justify-content-end align-items-center menu-bar-1" style="flex:1;">
                             <div class="flex-me text-center cursor-pointer active navFont">홍길동님 11,181,887 P2U</div>
                             <div class="flex-me text-center cursor-pointer navFont">장바구니</div>
                             <div class="flex-me text-center cursor-pointer navFont" >마이페이지</div>
@@ -149,15 +151,16 @@ $is_megamenu = 'yes';
 
                             </div>
                            
-                            <form class="flex-me-1">
+                            <form class="flex-me">
                                 <div class="form-group d-flex align-items-center input-group input-group-position">
                                     <input type="text" class="form-control" placeholder="">
                                     <i class="fas fa-search absolute text-secondary"></i>
                                 </div>
                             </form>
                         </div>
+                       
                 </div>
-                <div class="menu-bar-2 w-50">
+                <div class="d-none d-lg-flex menu-bar-2" style="width:60%">
                 <div><i class="fas fa-bars"></i></div>
                 <div class="flex-me ml-5 cursor-pointer">
                         <div class="dropdown-toggle navFont" id="searchDropdownII" aria-expanded="false">
@@ -174,15 +177,7 @@ $is_megamenu = 'yes';
                 <div class="flex-me cursor-pointer navFont">P2U소개</div>
                 <div class="flex-me cursor-pointer navFont">히트상품</div>
                 <div class="flex-me ml-5 cursor-pointer navFont">
-                        <div class="dropdown-toggle navFont" id="searchDropdownIII" aria-expanded="false">
-                            전체상품
-                        </div>
-                        <div class="dropdown-menu-custom" id="dropdownMenuIII">
-                            <a class="dropdown-item" href="#">상품 7</a>
-                            <a class="dropdown-item" href="#">상품 2</a>
-                            <a class="dropdown-item" href="#">상품 3</a>
-                            <a class="dropdown-item" href="#">상품 4</a>
-                        </div>
+                전체상품 
 
                 </div>
                 <div class="flex-me cursor-pointer navFont">이벤트</div>
@@ -496,11 +491,7 @@ $is_megamenu = 'yes';
             const dropdownMenu = document.getElementById('dropdownMenuII');
             dropdownMenu.classList.toggle('show'); // Toggle the dropdown visibility
         });
-        document.getElementById('searchDropdownIII').addEventListener('click', function() {
-            const dropdownMenu = document.getElementById('dropdownMenuIII');
-            dropdownMenu.classList.toggle('show'); // Toggle the dropdown visibility
-        });
-
+       
         
 
         // Close the dropdown if clicking outside of it
@@ -518,12 +509,7 @@ $is_megamenu = 'yes';
                 dropdownMenu.classList.remove('show');
             }
         });
-        window.addEventListener('click', function(event) {
-            const dropdownMenu = document.getElementById('dropdownMenuIII');
-            if (!event.target.closest('#searchDropdownIII') && !event.target.closest('#dropdownMenu')) {
-                dropdownMenu.classList.remove('show');
-            }
-        });
+      
 
         document.querySelector('.menu-bar-2').addEventListener('click',function(e){
             const current = Array.prototype.indexOf.call(this.children, e.target);

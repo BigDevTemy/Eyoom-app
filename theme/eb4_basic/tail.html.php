@@ -27,16 +27,16 @@ if (!defined('_EYOOM_')) exit;
 	<?php /*----- footer 시작 -----*/ ?>
 	<footer class="footer bg-black">
 		<div class="container ">
-			<div class="footer-top d-flex justify-content-between align-items-center">
-				<div class="flex-me">
-				<img src="<?php echo EYOOM_THEME_URL; ?>/image/new-dummy.png" class="site-logo" alt="<?php echo $config['cf_title']; ?>">
+		<div class="footer-top d-flex flex-column flex-lg-row justify-content-between">
+				<div class="flex-me text-start mb-3 mb-lg-0">
+					<img src="<?php echo EYOOM_THEME_URL; ?>/image/new-dummy.png" class="site-logo" alt="<?php echo $config['cf_title']; ?>">
 				</div>
-				<div class="flex-me d-flex ">
-					<div class="flex-me text-center text-white">카카오톡 채널추가</div>
-					<div class="flex-me text-center text-white">상품후기</div>
-					<div class="flex-me text-center text-white">1:1문의</div>
-					<div class="flex-me text-center text-white">FAQ</div>
-					<div class="flex-me text-center text-white">공지사항</div>
+				<div class="flex-me d-flex flex-column flex-lg-row text-start text-lg-center">
+					<div class="flex-me text-start mb-3 text-lg-center text-white mb-lg-0">카카오톡 채널추가</div>
+					<div class="flex-me text-start mb-3 text-lg-center text-white">상품후기</div>
+					<div class="flex-me text-start mb-3 text-lg-center text-white">1:1문의</div>
+					<div class="flex-me text-start mb-3 text-lg-center text-white">FAQ</div>
+					<div class="flex-me text-start mb-3 text-lg-center text-white">공지사항</div>
 				</div>
 			</div>
 
@@ -62,7 +62,7 @@ if (!defined('_EYOOM_')) exit;
 				<span>Copyright </span>&copy; <strong class="text-black f-w-400"><?php echo $config['cf_title']; ?></strong>. All Rights Reserved.
 			</div>
 
-			<div class="d-flex w-50 mt-3">
+			<div class="d-flex w-50 mt-5 pb-5">
 
 				<div class="text-white flex-me navFont">이용약관</div>
 				<div class="text-white flex-me navFont">개인정보처리방침</div>
